@@ -2,70 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" initial-scale="1.0">
-    <title> Fridasam </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fridasam Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-
 </head>
 <body>
     <header>
-        <h1>Fridasam Karimi</h1>
-        <p>Software Developer</p>
-        <button class="nav-toggle"> Menu </button>
+        <h1>Fridasam</h1>
+        <p>Web Developer | Tech Enthusiast</p>
+        <button class="nav-toggle">☰ Menu</button>
+        <img src="assets/profilepic.jpg" alt="Profile Picture" class="profile-pic">
         <nav class="nav-menu">
-            <a href="#About">About</a>
+            <a href="#about">About</a>
             <a href="#education">Education</a>
             <a href="#interests">Interests</a>
-            <a href="#proects">Projects/a>
+            <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
-
         </nav>
     </header>
 
-    <section id="about">
+    <section id="about" class="about-section">
         <h2>About Me</h2>
-        <p>Hi! I'm Friadasamapassionate software developer</p>
-    </section>
-    <section id="education">
-        <h2> Education Background</h2>
-        <p>I hold a degree in</p>
-        <a href="cv.pdf" download> Download My Cv</a>
+        <p>
 
+            I am Fridasam, a passionate software developer specializing in Android, web development, and database management. Skilled in Kotlin, MySQL, PostgreSQL, Node.js, and Python, I enjoy building efficient and user-friendly applications.  
+            
+            Currently, I am developing a business website with integrated payment functionality refining my expertise in full-stack development and database design. I am always learning, exploring new technologies, and working on projects that create real impact.  
+            
+            😊</p>
     </section>
 
-    <section id="Interests">
+    <section id="education" class="education-section">
+        <h2>Educational Background</h2>
+        <p>I hold a degree in [Your Degree] from [Your University].</p>
+        <a href="assets/fridasamcv.pdf" download>Download My CV</a>
+    </section>
+
+    <section id="interests" class="interests-section">
         <h2>Interests</h2>
         <ul>
-            <li>Web Development</li>
-            <li>Tech Innovatins</li>
+            <li>Web Development: Exploring modern frameworks and best practices.</li>
+            <li>Tech Innovations: Keeping up with emerging trends in technology.</li>
         </ul>
     </section>
 
-    <section id="projects">
-        <h2> Projects </h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>A brief description of your project</p>
-            <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project">
-            <h3>Project 2</h3>
-            <p>Another brief description.</p>
-            <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="projects-wrapper">
+            <section class="project-card">
+                <h3>Project 1</h3>
+                <p>A brief description of your project.</p>
+                <a href="https://github.com/yourusername/project1" target="_blank" class="project-link">View on GitHub</a>
+            </section>
+            <section class="project-card">
+                <h3>Project 2</h3>
+                <p>Another brief description.</p>
+                <a href="https://github.com/yourusername/project2" target="_blank" class="project-link">View on GitHub</a>
+            </section>
+            <section class="project-card">
+                <h3>Project 3</h3>
+                <p>Yet another cool project.</p>
+                <a href="https://github.com/yourusername/project3" target="_blank" class="project-link">View on GitHub</a>
+            </section>
         </div>
     </section>
-    section id="contact">
-
+    <section id="contact" class="contact-section">
         <h2>Contact Me</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <p>Feel free to reach out! Here’s how you can get in touch:</p>
+        <div class="contact-details">
+            <p>
+                <img src="assets/gmail.png" alt="Email Icon" class="favicon">
+                <strong>Email:</strong> <a href="mailto:emailexaple.com">kfridasam@gmail.com</a>
+            </p>
+            <p>
+                <img src="assets/whatsapp.png" alt="WhatsApp Icon" class="favicon">
+                <strong>WhatsApp:</strong> <a href="https://wa.me/1234567890" target="_blank">+254748871319</a>
+            </p>
+        </div>
     </section>
 
     <footer>
