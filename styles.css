@@ -56,7 +56,7 @@ header {
 
 .nav-menu {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     gap: 2rem;
     padding: 1rem 0;
 }
@@ -74,7 +74,7 @@ header {
 }
 
 /* Common Section Styles */
-.about-section, .education-section, .interests-section, .contact-section {
+.about-section, .projects-section, .interests-section, .contact-section {
     max-width: 800px;
     margin: 2rem auto;
     padding: 1.5rem;
@@ -89,7 +89,67 @@ header {
 .about-section:hover, .education-section:hover, .interests-section:hover, .contact-section:hover {
     transform: translateY(-5px);
 }
+.education-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-left: 5px solid #00ffcc; /* Teal border */
+    transition: transform 0.3s ease;
+}
 
+.education-section:hover {
+    transform: translateY(-5px);
+}
+
+.education-section h2 {
+    color: #00ffcc;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.education-section p {
+    color: #f0f0f0;
+}
+
+/* New round button style */
+.download-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 180px; /* Wider for rectangle */
+    height: 60px; /* Shorter height */
+    background: linear-gradient(45deg, #7b00ff, #00ccff);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px; /* Rounded rectangle, not circle */
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px; /* Adjusted padding for shape */
+    border: 3px solid #00ffcc; /* Teal border */
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 0, 122, 0.5); /* Pink glow */
+}
+
+.download-btn:hover {
+    background: linear-gradient(45deg, #00ffcc, #ff007a); /* Teal to pink on hover */
+    transform: scale(1.05); /* Slight grow effect */
+    box-shadow: 0 6px 15px rgba(0, 255, 204, 0.5); /* Teal glow */
+}
+
+/* Responsive adjustment */
+@media (max-width: 600px) {
+    .download-btn {
+        width: 150px; /* Slightly smaller on mobile */
+        height: 50px;
+        font-size: 1em;
+        padding: 8px 15px;
+    }
+}
 /* Individual Section Tweaks */
 .education-section {
     border-left-color: #00ffcc; /* Teal for education */
@@ -100,15 +160,10 @@ header {
 }
 
 .contact-section {
-    border-left-color: #ffcc00; /* Bright yellow for contact */
+    border-left-color: #ffcc00; 
 }
 
 /* Projects Section */
-.projects-section {
-    background: rgba(26, 26, 26, 0.9); /* Slightly opaque dark base */
-    padding: 40px 20px;
-}
-
 .projects-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -144,12 +199,15 @@ header {
     line-height: 1.4;
 }
 
-.project-card img {
-    max-width: 100%;
-    height: auto;
+.project-card img { 
+    width: 100%; /* Fills the card width */
+    height: 180px; /* Fixed height for consistency */
+    object-fit: cover; /* Scales image to cover the area, cropping if needed */
     border-radius: 5px;
     margin-bottom: 15px;
+    display: block; /* Removes bottom gap */
 }
+
 
 .project-card .project-link {
     display: inline-block;
@@ -173,6 +231,79 @@ h2 {
     color: #00ffcc; /* Teal for all headings */
     margin-bottom: 1rem;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+
+}
+
+.social-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Frosted glass effect */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-left: 5px solid #ffcc00; /* Yellow border to match contact */
+    transition: transform 0.3s ease;
+}
+
+.social-section:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+}
+
+.social-section h2 {
+    color: #00ffcc; /* Teal heading */
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.social-section p {
+    color: #f0f0f0; /* Light gray text */
+    margin-bottom: 1rem;
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; /* Space between links */
+    justify-content: center;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 10px 20px;
+    background: rgba(255, 0, 122, 0.2); /* Light pink background */
+    border: 2px solid #ff007a; /* Neon pink border */
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.social-link:hover {
+    background: rgba(0, 255, 204, 0.3); /* Teal background on hover */
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 255, 204, 0.5); /* Teal glow */
+}
+
+.social-link .favicon {
+    width: 24px; /* Slightly larger icons */
+    height: 24px;
+    vertical-align: middle;
+}
+
+/* Responsive adjustment */
+@media (max-width: 600px) {
+    .social-section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .social-links {
+        flex-direction: column; /* Stack links on mobile */
+        gap: 1rem;
+    }
 }
 
 /* Contact Styles */

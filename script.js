@@ -34,17 +34,19 @@ document.addEventListener('DOMContentLoaded', () => {
       title: 'Virtual Gyna App',
       image: 'assets/virtuagyna.jpg',
       description: 'Virtual Gyna App',
-      link: 'https://github.com/yourusername/project1'
+      link: 'https://github.com/FridasamKarimi/VirtualGynaApp'
     },
     {
       title: 'EliteFemme',
-      description: 'Another brief description.',
-      link: 'https://github.com/yourusername/project2'
+      image: 'assets/elite.jpeg',
+      description: 'EliteFemme',
+      link: 'https://github.com/FridasamKarimi/elitefemme'
     },
     {
-      title: 'Project 3',
-      description: 'Yet another cool project.',
-      link: 'https://github.com/yourusername/project3'
+      title: 'Students Registration',
+      image: 'assets/students.jpeg',
+      description: 'Students Registration',
+      link: 'https://github.com/FridasamKarimi/studregsys'
     }
   ];
   
