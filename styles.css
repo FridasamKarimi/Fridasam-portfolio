@@ -208,6 +208,99 @@ header {
     color: #1a1a1a;
     transform: scale(1.05);
 }
+/* Lab Challenges Section */
+.lab-challenges-section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Frosted glass effect */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-left: 5px solid #ffcc00; /* Yellow border to match social/contact */
+    transition: transform 0.3s ease;
+}
+
+.lab-challenges-section:hover {
+    transform: translateY(-5px); /* Subtle lift on hover */
+}
+
+.lab-challenges-section h2 {
+    color: #00ffcc; /* Teal heading */
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.lab-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.lab-card {
+    background: rgba(255, 255, 255, 0.15); /* Slightly more opaque, matches project-card */
+    backdrop-filter: blur(5px);
+    border: 2px solid #ff007a; /* Neon pink border */
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 320px; /* Matches project-card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lab-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 0, 122, 0.5); /* Pink glow */
+}
+
+.lab-card h3 {
+    color: #00ffcc; /* Teal heading */
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+.lab-card p {
+    color: #f0f0f0; /* Light gray text */
+    font-size: 1em;
+    line-height: 1.4;
+    margin-bottom: 10px; /* Space between paragraphs */
+}
+
+.lab-card .project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #ff007a; /* Neon pink */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.lab-card .project-link:hover {
+    background: #00ffcc; /* Teal on hover */
+    color: #1a1a1a;
+    transform: scale(1.05);
+}
+
+/* Responsive adjustment for lab cards */
+@media (max-width: 600px) {
+    .lab-challenges-section {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .lab-wrapper {
+        flex-direction: column;
+        overflow-x: hidden;
+        white-space: normal;
+    }
+
+    .lab-card {
+        max-width: 100%;
+    }
+}
 
 /* Common Styles */
 h2 {
